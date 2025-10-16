@@ -5,13 +5,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Welcome message
-              run: echo "My first GitHub Actions Job"
+              run: echo "My first GitHub Actions Job"            
             
-            - name: List the files
-              run: ls -la
+            - name: Get the runner info
+              run: cat /etc/*release*
 
             - name: Create text file
               run: echo "Hey, Hi. Running inside the pipeline" >> hello.txt        
             
-            - name: Read the README file
+            - name: Read the file
               run: cat hello.txt
