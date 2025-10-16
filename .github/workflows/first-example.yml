@@ -10,5 +10,8 @@ jobs:
             - name: List the files
               run: ls -la
             
-            - name: Read the README file
-              run: cat README.md
+            - name: Get PWD
+              run: pwd
+            
+            # - name: Read the README file
+            #   run: cat README.md
