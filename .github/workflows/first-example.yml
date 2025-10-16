@@ -12,6 +12,9 @@ jobs:
             
             - name: Clone the repo
               run: git clone https://github.com/jay-bram/demo.git
-            
-            - name: List files
-              run: ls
+
+            - name: List demo dir
+              run: ls demo
+              
+            - name: Display the README.md
+              run: cat demo/README.md
