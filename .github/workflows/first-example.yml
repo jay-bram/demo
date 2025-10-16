@@ -9,9 +9,9 @@ jobs:
             
             - name: Get the runner info
               run: cat /etc/*release*
-
-            - name: Create text file
-              run: echo "Hey, Hi. Running inside the pipeline" >> hello.txt        
             
-            - name: Read the file
-              run: cat hello.txt
+            - name: Clone the repo
+              run: git clone https://github.com/jay-bram/demo.git
+            
+            - name: List files
+              run: ls
