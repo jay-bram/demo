@@ -9,9 +9,9 @@ jobs:
             
             - name: List the files
               run: ls -la
+
+            - name: Create text file
+              run: echo "Hey, Hi. Running inside the pipeline" >> hello.txt        
             
-            - name: Get PWD
-              run: pwd
-            
-            # - name: Read the README file
-            #   run: cat README.md
+            - name: Read the README file
+              run: cat hello.txt
