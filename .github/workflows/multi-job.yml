@@ -11,9 +11,9 @@ jobs:
                 sudo apt-get install cowsay -y
 
             - name: Execute cowsay
-              run: cowsay "Hello, I'm a Linux cow" >> cow.txt
+              run: cowsay "Hello, I'm a Linux cow" >> cows.txt
 
-            - name: Upload the cow.txt
+            - name: Upload the cows.txt
               uses: actions/upload-artifact@v4
               with:
                 name: cow-text-file
