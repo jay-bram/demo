@@ -1,0 +1,17 @@
+name: ASCII Generator
+on:
+    push
+jobs:
+    ascii_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkou
+              uses: actions/checkout@v5
+
+            - name: Install Cowsay
+              run: |
+                sudo apt-get update -y
+                sudo apt-get install cowsay -y
+            - name: Execute
+              run: cowsay -f dragon "Dattebayo" >> dragon.txt
+
