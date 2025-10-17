@@ -4,6 +4,8 @@ on:
 jobs:
     ascii_job:
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
         steps:
             - name: Checkout
               uses: actions/checkout@v5
@@ -18,7 +20,7 @@ jobs:
             - name: Execute
               run: cowsay -f stegosaurus "Gwwwwwwww" >> dragon.txt
 
-            - name: Works
-              run: |
-                ls -la
-                git status
+            - name: Add and commit files
+              uses: stefanzweifel/git-auto-commit-action@v6
+              with:
+                commit_message: "Added files"
