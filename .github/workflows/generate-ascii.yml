@@ -13,8 +13,7 @@ jobs:
                 sudo apt-get update -y
                 sudo apt-get install cowsay -y
             - name: Execute
-              run: cowsay -f dragon "Dattebayo" >> dragon.txt
+              run: cowsay -f cow "Ambaaaa" >> cow.txt
 
             - name: Display file
-              run: cat dragon.txt
-
+              run: cat cow.txt
