@@ -12,5 +12,3 @@ jobs:
               echo "My First Multi Command"
               ls -lra
               cat README.md
-          - name: Generate ASCII content
-            run: cowsay -f dragon "Ambaaaaaaaa" >> amba.txt

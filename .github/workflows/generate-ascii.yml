@@ -18,8 +18,7 @@ jobs:
             - name: Execute
               run: cowsay -f stegosaurus "Gwwwwwwww" >> dragon.txt
 
-            - name: Display file
+            - name: Works
               run: |
-                cat dragon.txt
-                echo
-                cat animals.txt
+                ls -la
+                git status
