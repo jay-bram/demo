@@ -12,8 +12,14 @@ jobs:
               run: |
                 sudo apt-get update -y
                 sudo apt-get install cowsay -y
+            - name: List all cowsay animals
+              run: cowsay -l >> animals.txt    
+
             - name: Execute
-              run: cowsay -f cow "Ambaaaa" >> cow.txt
+              run: cowsay -f dragon "Gwwwwwwww" >> dragon.txt
 
             - name: Display file
-              run: cat cow.txt
+              run: |
+                cat dragon.txt
+                echo
+                cat animals.txt
