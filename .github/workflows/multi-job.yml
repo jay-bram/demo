@@ -17,7 +17,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: cow-text-file
-                path: cow.txt
+                path: cows.txt
 
               
     Job-2:
@@ -31,5 +31,5 @@ jobs:
             - name: List files
               run: ls -la
 
-            # - name: Print cows.txt
-            #   run: cat cows.txt
+            - name: Print cows.txt
+              run: cat cows.txt
