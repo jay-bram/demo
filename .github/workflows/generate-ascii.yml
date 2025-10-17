@@ -16,7 +16,7 @@ jobs:
               run: cowsay -l >> animals.txt    
 
             - name: Execute
-              run: cowsay -f vader "Gwwwwwwww" >> dragon.txt
+              run: cowsay -f stegosaurus "Gwwwwwwww" >> dragon.txt
 
             - name: Display file
               run: |
