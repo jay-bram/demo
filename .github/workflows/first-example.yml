@@ -13,5 +13,5 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v5            
 
-            - name: List demo dir
-              run: ls
+            - name: Display the README.md
+              run: cat README.md
