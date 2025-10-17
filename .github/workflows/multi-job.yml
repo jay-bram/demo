@@ -1,0 +1,19 @@
+name: Multi Job Flow
+on:
+    push
+jobs:
+    job-1:
+        run-on: ubuntu-latest
+        steps:
+            - name: Step-1~Job-1
+              run: |
+                echo "Step 1 - Job 1"
+                echo $HOSTNAME
+    job-2:
+        run-on: ubuntu-latest
+        steps:
+            - name: Step-1~Job-2
+              run: |
+                echo "Step 1 - Job 2"
+                echo $HOSTNAME
+
