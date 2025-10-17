@@ -10,6 +10,7 @@ jobs:
                 echo "Step 1 - Job 1"
                 echo $HOSTNAME
     job-2:
+        needs: job-1
         runs-on: ubuntu-latest
         steps:
             - name: Step-1~Job-2
